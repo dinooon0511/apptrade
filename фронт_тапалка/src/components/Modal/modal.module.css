@@ -1,0 +1,96 @@
+hr {
+  width: 90%;
+  margin: 0 auto;
+  height: 2px;
+  border: none;
+  background: linear-gradient(to right, #b8000f 0%, #ea0004 33%, #c46900 100%);
+}
+
+.txt-color {
+  background: linear-gradient(to right, #b8000f 0%, #ea0004 33%, #c46900 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+}
+.modalWrapper {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  translate: -50% -50%;
+  display: flex;
+  width: 80%;
+  max-width: calc(var(--container-max-width) * 0.9);
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+  background: #141414;
+  border: 2px solid #ea0004;
+  border-radius: 30px;
+  padding: 40px 20px 20px;
+}
+
+.modalWrapper::backdrop {
+  backdrop-filter: brightness(0.3) blur(10px);
+  -webkit-backdrop-filter: brightness(0.3) blur(10px); /* Для iOS */
+  background: rgba(0, 0, 0, 0.5); /* Фолбэк */
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+  .modalWrapper::backdrop {
+    background: rgba(0, 0, 0, 0.7); /* Усиленное затемнение если фильтры не поддерживаются */
+  }
+}
+
+.modalOrb {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-gradient);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.modalHeader {
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.modelSubHeader {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.descriptionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.description {
+  width: 55%;
+}
+
+.modalButton {
+  display: block;
+  border: none;
+  background: var(--primary-gradient);
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 7px 0px;
+}
+
+.modalWrapper:not([open]) {
+  display: none;
+}
+
+@media (max-height: 700px) {
+  .modalWrapper {
+    scale: 0.8;
+  }
+}

@@ -1,0 +1,21 @@
+.balanceWrapper {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 2px;
+  font-size: 48px;
+  height: 65px;
+}
+
+.balanceWrapper .coin {
+  height: 65px;
+  width: auto !important;
+}
+
+.primary-text {
+  background: linear-gradient(to right, #b8000f 0%, #ea0004 33%, #c46900 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+}

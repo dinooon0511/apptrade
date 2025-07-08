@@ -1,0 +1,84 @@
+.coinWrapper {
+  margin-top: -20px;
+  margin-bottom: 5vh;
+  color: white;
+}
+
+.txt-color {
+  background-image: linear-gradient(to right, #b8000f 0%, #ea0004 33%, #c46900 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+}
+
+.infoWrapper {
+  text-align: center;
+  font-size: 52px;
+  color: white;
+}
+
+.infoWrapper > span {
+  display: block;
+  color: white;
+}
+
+.withdrawalButton {
+  padding: 25px 30px;
+  border: none;
+  background: var(--primary-gradient);
+  border-radius: 20px;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-height: 780px) {
+  .withdrawalButton {
+    padding: 15px 20px;
+    font-size: 24px;
+  }
+
+  .withdrawalButton svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .coinWrapper img {
+    width: 80vw;
+  }
+  .coinWrapper span {
+    font-size: 36px;
+  }
+}
+
+@media (max-height: 941px) {
+  .coinWrapper img {
+    width: 85vw;
+  }
+}
+
+@media (max-height: 860px) {
+  .coinWrapper img {
+    width: 70vw;
+  }
+}
+
+@media (max-height: 735px) {
+  .coinWrapper img {
+    width: 60vw;
+  }
+
+  .coinWrapper {
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-height: 600px) {
+  .coinWrapper {
+    margin-bottom: 2vh;
+  }
+}

@@ -1,0 +1,47 @@
+.bottomMenuWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  border: var(--primary) 3px solid;
+  padding: 12px 0;
+  border-radius: 30px;
+  background: #141414;
+  margin: auto 10px 0;
+  scale: 0.8;
+}
+
+.bottomMenuButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+
+.bottomMenuButtonWrapper span {
+  text-transform: capitalize;
+}
+
+.homeButtonWrapper {
+  width: 110px;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-height: 700px) {
+  .bottomMenuButtonWrapper svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .homeButtonWrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .homeButtonWrapper svg {
+    width: 75px;
+    height: 75px;
+  }
+}
